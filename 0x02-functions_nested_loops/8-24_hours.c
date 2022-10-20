@@ -2,8 +2,9 @@
 
 /**
  * jacj_bauer - prints every minute of the day
+ *
  */
-main(void)
+void jack_bauer(void)
 {
 	int hour, minute;
 
@@ -12,12 +13,12 @@ main(void)
 		for (minute = 0; minute <= 59; minute++)
 
 		{
-			-putchar((hour / 10) + '0');
-			-putchar((hour % 10) + '0');
-			-putchar(':');
-			-putchar((minute / 10) + '0');
-			-putchar((minute % 10) + '0');
-			-putchar('\n');
+			_putchar((hour / 10) + '0');
+			_putchar((hour % 10) + '0');
+			_putchar(':');
+			_putchar((minute / 10) + '0');
+			_putchar((minute % 10) + '0');
+			_putchar('\n');
 		}
 	}
 }
